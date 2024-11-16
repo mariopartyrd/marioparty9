@@ -212,7 +212,7 @@ cflags_game = [
     "-fp_contract off",
 ]
 
-config.linker_version = "GC/3.0"
+config.linker_version = "GC/2.6"
 config.rel_strip_partial = False
 config.rel_empty_file = "REL/empty.c"
 
