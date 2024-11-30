@@ -151,7 +151,7 @@ config.asflags = [
 config.ldflags = [
     "-fp hardware",
     "-nodefaults",
-    # "-listclosure", # Uncomment for Wii linkers
+    "-listclosure", # Uncomment for Wii linkers
 ]
 # Use for any additional files that should cause a re-configure when modified
 config.reconfig_deps = []
@@ -175,7 +175,7 @@ cflags_base = [
     "-RTTI off",
     "-fp_contract on",
     "-str reuse",
-    "-multibyte",  # For Wii compilers, replace with `-enc SJIS`
+    "-enc SJIS",  # For Wii compilers, replace with `-enc SJIS`
     "-i include",
     f"-i build/{config.version}/include",
     f"-DVERSION={version_num}",
@@ -212,7 +212,7 @@ cflags_game = [
     "-fp_contract off",
 ]
 
-config.linker_version = "GC/2.6"
+config.linker_version = "GC/3.0a5.2"
 config.rel_strip_partial = False
 config.rel_empty_file = "REL/empty.c"
 
@@ -252,7 +252,7 @@ config.libs = [
         "host": False,
         "objects": [
             Object(NonMatching, "Runtime.PPCEABI.H/global_destructor_chain.c"),
-            Object(Matching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
+            Object(NonMatching, "Runtime.PPCEABI.H/__init_cpp_exceptions.cpp"),
         ],
     },
     {
