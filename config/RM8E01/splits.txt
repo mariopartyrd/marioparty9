@@ -13,6 +13,87 @@ Sections:
 	.sdata2     type:rodata align:8
 	.sbss2      type:bss align:32
 
+game/objmain.c:
+	.text       start:0x800074A0 end:0x800090E8
+	.data       start:0x801AF5E0 end:0x801AF9B8
+	.bss        start:0x8020CF40 end:0x8020D000
+	.sdata      start:0x802CD140 end:0x802CD160
+	.sbss       start:0x802CDCE0 end:0x802CDD30
+	.sdata2     start:0x802CEE20 end:0x802CEE50
+
+game/main.c:
+	.text       start:0x800090E8 end:0x800094E8
+	.data       start:0x801AF9B8 end:0x801AF9F8
+	.sdata      start:0x802CD160 end:0x802CD178
+	.sbss       start:0x802CDD30 end:0x802CDD50
+	.sdata2     start:0x802CEE50 end:0x802CEE58
+
+game/pad.c:
+	.text       start:0x800094E8 end:0x8000BFEC
+	.rodata     start:0x801AADE0 end:0x801AAE10
+	.data       start:0x801AF9F8 end:0x801B05B8
+	.bss        start:0x8020D000 end:0x8020E700
+	.sdata      start:0x802CD178 end:0x802CD180
+	.sbss       start:0x802CDD50 end:0x802CDE80
+	.sdata2     start:0x802CEE58 end:0x802CEE70
+
+game/dvd.c:
+	.text       start:0x8000BFEC end:0x8000C718
+	.data       start:0x801B05B8 end:0x801B0700
+	.sdata      start:0x802CD180 end:0x802CD190
+	.sbss       start:0x802CDE80 end:0x802CDE88
+
+game/data.c:
+	.text       start:0x8000C718 end:0x8000EFD8
+	.data       start:0x801B0700 end:0x801B2590
+	.bss        start:0x8020E700 end:0x80211900
+	.sdata      start:0x802CD190 end:0x802CD1A0
+	.sbss       start:0x802CDE88 end:0x802CDE98
+
+game/decode.c:
+	.text       start:0x8000EFD8 end:0x8000F9B8
+	.data       start:0x801B2590 end:0x801B25E0
+	.bss        start:0x80211900 end:0x80211D00
+	.sdata      start:0x802CD1A0 end:0x802CD1A8
+	.sbss       start:0x802CDE98 end:0x802CDEA0
+
+game/font.c:
+	.data       start:0x801B25E0 end:0x801B45E0
+
+game/init.c:
+	.text       start:0x8000F9B8 end:0x80010164
+	.data       start:0x801B45E0 end:0x801B4618
+	.bss        start:0x80211D00 end:0x80211D50
+	.sdata      start:0x802CD1A8 end:0x802CD1B8
+	.sbss       start:0x802CDEA0 end:0x802CDED0
+	.sdata2     start:0x802CEE70 end:0x802CEE80
+
+game/jmp.c:
+	.text       start:0x80010164 end:0x80010258
+
+game/malloc.c:
+	.text       start:0x80010258 end:0x80010744
+	.data       start:0x801B4618 end:0x801B4728
+	.bss        start:0x80211D50 end:0x80211D70
+	.sbss       start:0x802CDED0 end:0x802CDED8
+
+game/memory.c:
+	.text       start:0x80010744 end:0x80010EB4
+	.data       start:0x801B4728 end:0x801B4820
+
+game/printfunc.c:
+	.text       start:0x80010EB4 end:0x800126C0
+	.data       start:0x801B4820 end:0x801B4860
+	.bss        start:0x80211D70 end:0x80218670
+	.sbss       start:0x802CDED8 end:0x802CDEE8
+	.sdata2     start:0x802CEE80 end:0x802CEEE0
+
+game/process.c:
+	.text       start:0x800126C0 end:0x80013478
+	.data       start:0x801B4860 end:0x801B48B0
+	.bss        start:0x80218670 end:0x80218768
+	.sbss       start:0x802CDEE8 end:0x802CDEF8
+
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x80198580 end:0x801985F0
 	.ctors      start:0x801AAD60 end:0x801AAD64 rename:.ctors$10

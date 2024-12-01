@@ -231,7 +231,7 @@ def DolphinLib(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
 def Rel(lib_name: str, objects: List[Object]) -> Dict[str, Any]:
     return {
         "lib": lib_name,
-        "mw_version": "GC/1.3.2",
+        "mw_version": "GC/3.0a5.2",
         "cflags": cflags_rel,
         "host": True,
         "objects": objects,
@@ -261,6 +261,19 @@ config.libs = [
         "cflags": cflags_game,
         "host": False,
         "objects": [
+            Object(NonMatching, "game/objmain.c"),
+            Object(NonMatching, "game/main.c"),
+            Object(NonMatching, "game/pad.c"),
+            Object(NonMatching, "game/dvd.c"),
+            Object(NonMatching, "game/data.c"),
+            Object(NonMatching, "game/decode.c"),
+            Object(NonMatching, "game/font.c"),
+            Object(NonMatching, "game/init.c"),
+            Object(NonMatching, "game/jmp.c"),
+            Object(NonMatching, "game/malloc.c"),
+            Object(NonMatching, "game/memory.c"),
+            Object(NonMatching, "game/printfunc.c"),
+            Object(NonMatching, "game/process.c"),
             Object(NonMatching, "game/kerent.c"),
         ],
     },
