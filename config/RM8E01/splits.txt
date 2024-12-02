@@ -80,6 +80,7 @@ game/malloc.c:
 game/memory.c:
 	.text       start:0x80010744 end:0x80010EB4
 	.data       start:0x801B4728 end:0x801B4820
+	.sdata      start:0x802CD1B8 end:0x802CD1C0
 
 game/printfunc.c:
 	.text       start:0x80010EB4 end:0x800126C0
@@ -93,6 +94,53 @@ game/process.c:
 	.data       start:0x801B4860 end:0x801B48B0
 	.bss        start:0x80218670 end:0x80218768
 	.sbss       start:0x802CDEE8 end:0x802CDEF8
+
+game/sprman.c:
+	.text       start:0x80013478 end:0x80016300
+	.rodata     start:0x801AAE10 end:0x801AAE20
+	.data       start:0x801B48B0 end:0x801B4A20
+	.bss        start:0x80218768 end:0x8021FB68
+	.sdata      start:0x802CD1C0 end:0x802CD1D0
+	.sbss       start:0x802CDEF8 end:0x802CDF08
+	.sdata2     start:0x802CEEE0 end:0x802CEF38
+
+game/sprput.c:
+	.text       start:0x80016300 end:0x800192D4
+	.rodata     start:0x801AAE20 end:0x801AAE30
+	.data       start:0x801B4A20 end:0x801B4A50
+	.bss        start:0x8021FB68 end:0x8021FBE8
+	.sbss       start:0x802CDF08 end:0x802CDF10
+	.sdata2     start:0x802CEF38 end:0x802CEF98
+
+game/sprex.c:
+	.text       start:0x800192D4 end:0x8001BFD0
+	.rodata     start:0x801AAE30 end:0x801AAE58
+	.data       start:0x801B4A50 end:0x801B4AA8
+	.bss        start:0x8021FBE8 end:0x802207E8
+	.sbss       start:0x802CDF10 end:0x802CDF18
+	.sdata2     start:0x802CEF98 end:0x802CF000
+
+game/hsfdraw.c:
+	.text       start:0x8001BFD0 end:0x8002772C
+	.rodata     start:0x801AAE58 end:0x801AAE68
+	.data       start:0x801B4AA8 end:0x801B4D80
+	.bss        start:0x802207E8 end:0x80222328
+	.sdata      start:0x802CD1D0 end:0x802CD1E8
+	.sbss       start:0x802CDF18 end:0x802CDFD0
+	.sdata2     start:0x802CF000 end:0x802CF080
+
+game/hsfload.c:
+	.text       start:0x8002772C end:0x8002B0F8
+	.data       start:0x801B4D80 end:0x801B4E00
+	.bss        start:0x80222328 end:0x80222658
+	.sbss       start:0x802CDFD0 end:0x802CE008
+
+game/hsfman.c:
+	.text       start:0x8002B0F8 end:0x800363F8
+	.data       start:0x801B4E00 end:0x801BFF68
+	.bss        start:0x80222658 end:0x80225120
+	.sbss       start:0x802CE008 end:0x802CE0B0
+	.sdata2     start:0x802CF080 end:0x802CF150
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x80198580 end:0x801985F0
