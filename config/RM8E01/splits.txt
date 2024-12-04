@@ -209,6 +209,100 @@ game/audioman.cpp:
 	.sbss       start:0x802CE158 end:0x802CE1D0
 	.sdata2     start:0x802CF3A0 end:0x802CF3F0
 
+game/EnvelopeExec.c:
+	.text       start:0x80053DD8 end:0x800553F0
+	.sbss       start:0x802CE1D0 end:0x802CE200
+	.sdata2     start:0x802CF3F0 end:0x802CF408
+
+game/esprite.c:
+	.text       start:0x800553F0 end:0x80055AE8
+	.data       start:0x801D1018 end:0x801D1038
+	.bss        start:0x8022B710 end:0x8022D710
+	.sbss       start:0x802CE200 end:0x802CE208
+
+game/ovllist.c:
+	.data       start:0x801D1038 end:0x801D1C00
+
+game/ClusterExec.c:
+	.text       start:0x80055AE8 end:0x8005643C
+	.sdata2     start:0x802CF408 end:0x802CF418
+
+game/ShapeExec.c:
+	.text       start:0x8005643C end:0x8005687C
+	.sdata2     start:0x802CF418 end:0x802CF428
+
+game/wipe.c:
+	.text       start:0x8005687C end:0x8005A238
+	.data       start:0x801D1C00 end:0x801D1C80
+	.bss        start:0x8022D710 end:0x8022D760
+	.sbss       start:0x802CE208 end:0x802CE220
+	.sdata2     start:0x802CF428 end:0x802CF550
+
+game/window.c:
+	.text       start:0x8005A238 end:0x800661F4
+	.rodata     start:0x801AAF38 end:0x801AAF68
+	.data       start:0x801D1C80 end:0x801D2830
+	.bss        start:0x8022D760 end:0x802377E0
+	.sdata      start:0x802CD258 end:0x802CD4F8
+	.sbss       start:0x802CE220 end:0x802CE268
+	.sdata2     start:0x802CF550 end:0x802CF668
+
+game/card.c:
+	.text       start:0x800661F4 end:0x800669B8
+	.data       start:0x801D2830 end:0x801D2880
+	.sbss       start:0x802CE268 end:0x802CE278
+
+game/THPSimple.c:
+	.text       start:0x800669B8 end:0x80068C64
+	.data       start:0x801D2880 end:0x801D2980
+	.bss        start:0x802377E0 end:0x80237CC0
+	.sdata      start:0x802CD4F8 end:0x802CD500
+	.sbss       start:0x802CE278 end:0x802CE2A0
+	.sdata2     start:0x802CF668 end:0x802CF678
+
+game/THPDraw.c:
+	.text       start:0x80068C64 end:0x800695F0
+	.sdata2     start:0x802CF678 end:0x802CF690
+
+game/thpmain.c:
+	.text       start:0x800695F0 end:0x8006A5C4
+	.rodata     start:0x801AAF68 end:0x801AAF78
+	.data       start:0x801D2980 end:0x801D29F0
+	.bss        start:0x80237CC0 end:0x80237D10
+	.sbss       start:0x802CE2A0 end:0x802CE2C0
+	.sdata2     start:0x802CF690 end:0x802CF6C0
+
+game/mgmovie.c:
+	.text       start:0x8006A5C4 end:0x8006BEA4
+	.rodata     start:0x801AAF78 end:0x801AAF88
+	.sbss       start:0x802CE2C0 end:0x802CE2C8
+	.sdata2     start:0x802CF6C0 end:0x802CF700
+
+game/objsub.c:
+	.text       start:0x8006BEA4 end:0x8006C50C
+	.data       start:0x801D29F0 end:0x801D2A90
+	.sdata      start:0x802CD500 end:0x802CD510
+
+game/flag.c:
+	.text       start:0x8006C50C end:0x8006C724
+	.bss        start:0x80237D10 end:0x80237D20
+
+game/sreset.c:
+	.text       start:0x8006C724 end:0x8006D218
+	.data       start:0x801D2A90 end:0x801DA030
+	.bss        start:0x80237D20 end:0x80239098
+	.sdata      start:0x802CD510 end:0x802CD518
+	.sbss       start:0x802CE2C8 end:0x802CE2F8
+
+game/charman.c:
+	.text       start:0x8006D218 end:0x8007B0F4
+	.rodata     start:0x801AAF88 end:0x801AAFA8
+	.data       start:0x801DA030 end:0x801DBA40
+	.bss        start:0x80239098 end:0x8023A518
+	.sdata      start:0x802CD518 end:0x802CD530
+	.sbss       start:0x802CE2F8 end:0x802CE310
+	.sdata2     start:0x802CF700 end:0x802CF860
+
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x80198580 end:0x801985F0
 	.ctors      start:0x801AAD60 end:0x801AAD64 rename:.ctors$10
