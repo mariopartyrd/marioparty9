@@ -139,8 +139,75 @@ game/hsfman.c:
 	.text       start:0x8002B0F8 end:0x800363F8
 	.data       start:0x801B4E00 end:0x801BFF68
 	.bss        start:0x80222658 end:0x80225120
+	.sdata      start:0x802CD1E8 end:0x802CD1F0
 	.sbss       start:0x802CE008 end:0x802CE0B0
 	.sdata2     start:0x802CF080 end:0x802CF150
+
+game/hsfmotion.c:
+	.text       start:0x800363F8 end:0x8003AC10
+	.data       start:0x801BFF68 end:0x801C01B8
+	.bss        start:0x80225120 end:0x80225D20
+	.sbss       start:0x802CE0B0 end:0x802CE0B8
+	.sdata2     start:0x802CF150 end:0x802CF1C0
+
+game/hsfanim.c:
+	.text       start:0x8003AC10 end:0x80041010
+	.data       start:0x801C01B8 end:0x801C02D0
+	.bss        start:0x80225D20 end:0x80227F68
+	.sdata2     start:0x802CF1C0 end:0x802CF288
+
+game/hsfex.c:
+	.text       start:0x80041010 end:0x800438C4
+	.data       start:0x801C02D0 end:0x801C02F0
+	.sdata2     start:0x802CF288 end:0x802CF340
+
+game/perf.c:
+	.text       start:0x800438C4 end:0x80043D74
+	.bss        start:0x80227F68 end:0x802282B8
+	.sdata      start:0x802CD1F0 end:0x802CD200
+	.sbss       start:0x802CE0B8 end:0x802CE110
+
+game/fault.c:
+	.text       start:0x80043D74 end:0x800447DC
+	.data       start:0x801C02F0 end:0x801C0B18
+	.bss        start:0x802282B8 end:0x802282D0
+	.sdata      start:0x802CD200 end:0x802CD210
+	.sbss       start:0x802CE110 end:0x802CE120
+
+game/gamework.c:
+	.text       start:0x800447DC end:0x80045CF4
+	.rodata     start:0x801AAE68 end:0x801AAEA0
+	.bss        start:0x802282D0 end:0x80229580
+	.sdata      start:0x802CD210 end:0x802CD218
+	.sbss       start:0x802CE120 end:0x802CE140
+
+game/objsysobj.c:
+	.text       start:0x80045CF4 end:0x800477AC
+	.bss        start:0x80229580 end:0x80229A20
+	.sbss       start:0x802CE140 end:0x802CE148
+	.sdata2     start:0x802CF340 end:0x802CF390
+
+game/objdll.c:
+	.text       start:0x800477AC end:0x8004819C
+	.data       start:0x801C0B18 end:0x801C1008
+	.bss        start:0x80229A20 end:0x80229A70
+	.sdata      start:0x802CD218 end:0x802CD220
+	.sbss       start:0x802CE148 end:0x802CE150
+
+game/frand.c:
+	.text       start:0x8004819C end:0x80048448
+	.sbss       start:0x802CE150 end:0x802CE158
+	.sdata2     start:0x802CF390 end:0x802CF3A0
+
+game/audioman.cpp:
+	.text       start:0x80048448 end:0x80053DD8
+	.ctors      start:0x801AAD64 end:0x801AAD68
+	.rodata     start:0x801AAEA0 end:0x801AAF38
+	.data       start:0x801C1008 end:0x801D1018
+	.bss        start:0x80229A70 end:0x8022B710
+	.sdata      start:0x802CD220 end:0x802CD258
+	.sbss       start:0x802CE158 end:0x802CE1D0
+	.sdata2     start:0x802CF3A0 end:0x802CF3F0
 
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x80198580 end:0x801985F0
