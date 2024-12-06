@@ -303,6 +303,104 @@ game/charman.c:
 	.sbss       start:0x802CE2F8 end:0x802CE310
 	.sdata2     start:0x802CF700 end:0x802CF860
 
+game/colman.c:
+	.text       start:0x8007B0F4 end:0x800863B0
+	.data       start:0x801DBA40 end:0x801DBAE8
+	.bss        start:0x8023A518 end:0x8023A658
+	.sbss       start:0x802CE310 end:0x802CE320
+	.sdata2     start:0x802CF860 end:0x802CF8F8
+
+game/actman.c:
+	.text       start:0x800863B0 end:0x8008F390
+	.data       start:0x801DBAE8 end:0x801DBB78
+	.bss        start:0x8023A658 end:0x8023A678
+	.sdata2     start:0x802CF8F8 end:0x802CFA40
+
+game/gamemes.c:
+	.text       start:0x8008F390 end:0x800921D0
+	.rodata     start:0x801AAFA8 end:0x801AB010
+	.data       start:0x801DBB78 end:0x801DC100
+	.bss        start:0x8023A678 end:0x8023AA90
+	.sdata      start:0x802CD530 end:0x802CD538
+	.sbss       start:0x802CE320 end:0x802CE348
+	.sdata2     start:0x802CFA40 end:0x802CFAF0
+
+game/mgdata.c:
+	.text       start:0x800921D0 end:0x8009268C
+	.data       start:0x801DC100 end:0x801DF3E8
+	.bss        start:0x8023AA90 end:0x8023B1B8
+	.sdata      start:0x802CD538 end:0x802CD548
+	.sbss       start:0x802CE348 end:0x802CE380
+	.sdata2     start:0x802CFAF0 end:0x802CFB08
+
+game/saveload.c:
+	.text       start:0x8009268C end:0x80096094
+	.rodata     start:0x801AB010 end:0x801AB038
+	.data       start:0x801DF3E8 end:0x801DF590
+	.bss        start:0x8023B1B8 end:0x8023B730
+	.sdata      start:0x802CD548 end:0x802CD570
+	.sbss       start:0x802CE380 end:0x802CE3A0
+	.sdata2     start:0x802CFB08 end:0x802CFB98
+
+game/mgtimer.c:
+	.text       start:0x80096094 end:0x800975B0
+	.rodata     start:0x801AB038 end:0x801AB2A8
+	.sdata      start:0x802CD570 end:0x802CD578
+	.sdata2     start:0x802CFB98 end:0x802CFBC8
+
+game/mggamemes.c:
+	.text       start:0x800975B0 end:0x80099CDC
+	.rodata     start:0x801AB2A8 end:0x801AB2B8
+	.data       start:0x801DF590 end:0x801DF750
+	.bss        start:0x8023B730 end:0x8023B760
+	.sdata      start:0x802CD578 end:0x802CD5A8
+	.sbss       start:0x802CE3A0 end:0x802CE3C8
+	.sdata2     start:0x802CFBC8 end:0x802CFC20
+
+game/mgresult.c:
+	.text       start:0x80099CDC end:0x800A0210
+	.rodata     start:0x801AB2B8 end:0x801AB3C0
+	.data       start:0x801DF750 end:0x801DF868
+	.bss        start:0x8023B760 end:0x8023B860
+	.sdata      start:0x802CD5A8 end:0x802CD5B8
+	.sbss       start:0x802CE3C8 end:0x802CE400
+	.sdata2     start:0x802CFC20 end:0x802CFCE8
+
+game/mgscore.c:
+	.text       start:0x800A0210 end:0x800A1D70
+	.rodata     start:0x801AB3C0 end:0x801AB448
+	.sdata      start:0x802CD5B8 end:0x802CD5C0
+	.sdata2     start:0x802CFCE8 end:0x802CFD38
+
+game/seqman.c:
+	.text       start:0x800A1D70 end:0x800A3928
+	.data       start:0x801DF868 end:0x801DF8A0
+	.bss        start:0x8023B860 end:0x8023BAC8
+	.sbss       start:0x802CE400 end:0x802CE410
+	.sdata2     start:0x802CFD38 end:0x802CFD40
+
+game/home.cpp:
+	.text       start:0x800A3928 end:0x800A4FB8
+	.ctors      start:0x801AAD68 end:0x801AAD6C
+	.rodata     start:0x801AB448 end:0x801AB460
+	.data       start:0x801DF8A0 end:0x801DF9B0
+	.bss        start:0x8023BAC8 end:0x8023BE28
+	.sdata      start:0x802CD5C0 end:0x802CD5C8
+	.sbss       start:0x802CE410 end:0x802CE440
+	.sdata2     start:0x802CFD40 end:0x802CFDA8
+
+game/nand.c:
+	.text       start:0x800A4FB8 end:0x800A64C8
+	.data       start:0x801DF9B0 end:0x801DFAF0
+	.bss        start:0x8023BE28 end:0x8023BEA0
+	.sbss       start:0x802CE440 end:0x802CE450
+
+game/mii.c:
+	.text       start:0x800A64C8 end:0x800A8960
+	.data       start:0x801DFAF0 end:0x801DFD08
+	.sbss       start:0x802CE450 end:0x802CE468
+	.sdata2     start:0x802CFDA8 end:0x802CFDC8
+
 Runtime.PPCEABI.H/__init_cpp_exceptions.cpp:
 	.text       start:0x80198580 end:0x801985F0
 	.ctors      start:0x801AAD60 end:0x801AAD64 rename:.ctors$10
