@@ -5,3 +5,79 @@ Sections:
 	.rodata     type:rodata align:32
 	.data       type:data align:8
 	.bss        type:bss align:32
+
+REL/w03dll/world03_main.cpp:
+	.text       start:0x00000000 end:0x00000FE8
+	.ctors      start:0x00000000 end:0x00000004
+	.rodata     start:0x00000000 end:0x00000028
+	.data       start:0x00000000 end:0x00000520
+	.bss        start:0x00000000 end:0x00000028
+
+REL/w03dll/world03.cpp:
+	.text       start:0x00000FE8 end:0x00022B8C
+	.ctors      start:0x00000004 end:0x00000008
+	.rodata     start:0x00000028 end:0x00000238
+	.data       start:0x00000520 end:0x00000E68
+	.bss        start:0x00000028 end:0x000000D8
+
+REL/w03dll/world03_object.cpp:
+	.text       start:0x00022B8C end:0x00029BF4
+	.ctors      start:0x00000008 end:0x0000000C
+	.rodata     start:0x00000238 end:0x000003F8
+	.data       start:0x00000E68 end:0x00001390
+	.bss        start:0x000000D8 end:0x000001F8
+
+REL/w03dll/world03_event1.cpp:
+	.text       start:0x00029BF4 end:0x000312D8
+	.ctors      start:0x0000000C end:0x00000010
+	.rodata     start:0x000003F8 end:0x00000548
+	.data       start:0x00001390 end:0x00001D70
+	.bss        start:0x000001F8 end:0x00000248
+
+REL/w03dll/world03_event2.cpp:
+	.text       start:0x000312D8 end:0x00042EB8
+	.ctors      start:0x00000010 end:0x00000014
+	.rodata     start:0x00000548 end:0x000007F0
+	.data       start:0x00001D70 end:0x00002918
+	.bss        start:0x00000248 end:0x00000288
+
+REL/w03dll/world03_eventman.cpp:
+	.text       start:0x00042EB8 end:0x00044F40
+	.data       start:0x00002918 end:0x000029C8
+
+REL/w03dll/world03_effect.cpp:
+	.text       start:0x00044F40 end:0x0004A150
+	.ctors      start:0x00000014 end:0x00000018
+	.rodata     start:0x000007F0 end:0x00000868
+	.data       start:0x000029C8 end:0x00003228
+	.bss        start:0x00000288 end:0x000002B8
+
+REL/w03dll/world03_open.cpp:
+	.text       start:0x0004A150 end:0x0004AE04
+	.ctors      start:0x00000018 end:0x0000001C
+	.rodata     start:0x00000868 end:0x000008C8
+	.data       start:0x00003228 end:0x00003590
+	.bss        start:0x000002B8 end:0x000002E8
+
+REL/w03dll/world03_light.cpp:
+	.text       start:0x0004AE04 end:0x0004C5F4
+	.ctors      start:0x0000001C end:0x00000020
+	.rodata     start:0x000008C8 end:0x000009C0
+	.data       start:0x00003590 end:0x000038E0
+	.bss        start:0x000002E8 end:0x00000340
+
+REL/w03dll/world03_chusan.cpp:
+	.text       start:0x0004C5F4 end:0x0004E968
+	.ctors      start:0x00000020 end:0x00000024
+	.rodata     start:0x000009C0 end:0x00000AF8
+	.data       start:0x000038E0 end:0x00003DA8
+	.bss        start:0x00000340 end:0x00000388
+
+REL/board/board_process.cpp:
+	.text       start:0x0004E968 end:0x0004ECC8
+	.data       start:0x00003DA8 end:0x00003DD0
+
+REL/board/game_object.cpp:
+	.text       start:0x0004ECC8 end:0x000514FC
+	.data       start:0x00003DD0 end:0x00003EA0
+	.bss        start:0x00000388 end:0x00000390
