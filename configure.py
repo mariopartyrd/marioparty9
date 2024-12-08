@@ -197,13 +197,6 @@ cflags_runtime = [
     "-inline auto",
 ]
 
-# REL flags
-cflags_rel = [
-    *cflags_base,
-    "-sdata 0",
-    "-sdata2 0",
-]
-
 # Game flags
 cflags_game = [
     *cflags_base,
@@ -211,6 +204,15 @@ cflags_game = [
     "-char unsigned",
     "-fp_contract off",
 ]
+
+# REL flags
+cflags_rel = [
+    *cflags_game,
+    "-sdata 0",
+    "-sdata2 0",
+    "-pool off"
+]
+
 
 config.linker_version = "GC/3.0a5.2"
 config.rel_strip_partial = False
@@ -331,6 +333,31 @@ config.libs = [
             Object(Matching, "REL/empty.c"),  # Must be marked as matching
         ],
     },
+    {
+        "lib": "board",
+        "mw_version": config.linker_version,
+        "cflags": cflags_rel,
+        "host": False,
+        "objects": [
+            Object(NonMatching, "REL/board/board_process.cpp"),
+            Object(NonMatching, "REL/board/game_object.cpp"),
+        ],
+    },
+    Rel(
+        "w03dll",
+        objects={
+            Object(NonMatching, "REL/w03dll/world03_main.cpp"),
+            Object(NonMatching, "REL/w03dll/world03.cpp"),
+            Object(NonMatching, "REL/w03dll/world03_object.cpp"),
+            Object(NonMatching, "REL/w03dll/world03_event1.cpp"),
+            Object(NonMatching, "REL/w03dll/world03_event2.cpp"),
+            Object(NonMatching, "REL/w03dll/world03_eventman.cpp"),
+            Object(NonMatching, "REL/w03dll/world03_effect.cpp"),
+            Object(NonMatching, "REL/w03dll/world03_open.cpp"),
+            Object(NonMatching, "REL/w03dll/world03_light.cpp"),
+            Object(NonMatching, "REL/w03dll/world03_chusan.cpp"),
+        },
+    ),
 ]
 
 if args.mode == "configure":
