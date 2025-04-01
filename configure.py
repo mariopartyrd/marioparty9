@@ -28,7 +28,7 @@ from tools.project import (
 # Game versions
 DEFAULT_VERSION = 0
 VERSIONS = [
-    "RM8E01",  # 0
+    "SSQE01",  # 0
 ]
 
 parser = argparse.ArgumentParser()
@@ -263,65 +263,6 @@ config.libs = [
         "cflags": cflags_game,
         "host": False,
         "objects": [
-            Object(NonMatching, "game/objmain.c"),
-            Object(NonMatching, "game/main.c"),
-            Object(NonMatching, "game/pad.c"),
-            Object(NonMatching, "game/dvd.c"),
-            Object(NonMatching, "game/data.c"),
-            Object(NonMatching, "game/decode.c"),
-            Object(NonMatching, "game/font.c"),
-            Object(NonMatching, "game/init.c"),
-            Object(NonMatching, "game/jmp.c"),
-            Object(NonMatching, "game/malloc.c"),
-            Object(NonMatching, "game/memory.c"),
-            Object(NonMatching, "game/printfunc.c"),
-            Object(NonMatching, "game/process.c"),
-            Object(NonMatching, "game/sprman.c"),
-            Object(NonMatching, "game/sprput.c"),
-            Object(NonMatching, "game/sprex.c"),
-            Object(NonMatching, "game/hsfdraw.c"),
-            Object(NonMatching, "game/hsfload.c"),
-            Object(NonMatching, "game/hsfman.c"),
-            Object(NonMatching, "game/hsfmotion.c"),
-            Object(NonMatching, "game/hsfanim.c"),
-            Object(NonMatching, "game/hsfex.c"),
-            Object(NonMatching, "game/perf.c"),
-            Object(NonMatching, "game/fault.c"),
-            Object(NonMatching, "game/gamework.c"),
-            Object(NonMatching, "game/objsysobj.c"),
-            Object(NonMatching, "game/objdll.c"),
-            Object(NonMatching, "game/frand.c"),
-            Object(NonMatching, "game/audioman.cpp"),
-            Object(NonMatching, "game/EnvelopeExec.c"),
-            Object(NonMatching, "game/esprite.c"),
-            Object(NonMatching, "game/ovllist.c"),
-            Object(NonMatching, "game/ClusterExec.c"),
-            Object(NonMatching, "game/ShapeExec.c"),
-            Object(NonMatching, "game/wipe.c"),
-            Object(NonMatching, "game/window.c"),
-            Object(NonMatching, "game/card.c"),
-            Object(NonMatching, "game/THPSimple.c"),
-            Object(NonMatching, "game/THPDraw.c"),
-            Object(NonMatching, "game/thpmain.c"),
-            Object(NonMatching, "game/mgmovie.c"),
-            Object(NonMatching, "game/objsub.c"),
-            Object(NonMatching, "game/flag.c"),
-            Object(NonMatching, "game/sreset.c"),
-            Object(NonMatching, "game/charman.c"),
-            Object(NonMatching, "game/colman.c"),
-            Object(NonMatching, "game/actman.c"),
-            Object(NonMatching, "game/gamemes.c"),
-            Object(NonMatching, "game/mgdata.c"),
-            Object(NonMatching, "game/saveload.c"),
-            Object(NonMatching, "game/mgtimer.c"),
-            Object(NonMatching, "game/mggamemes.c"),
-            Object(NonMatching, "game/mgresult.c"),
-            Object(NonMatching, "game/mgscore.c"),
-            Object(NonMatching, "game/seqman.c"),
-            Object(NonMatching, "game/home.cpp"),
-            Object(NonMatching, "game/nand.c"),
-            Object(NonMatching, "game/mii.c"),
-            Object(NonMatching, "game/kerent.c"),
         ],
     },
     {
@@ -330,7 +271,7 @@ config.libs = [
         "cflags": cflags_rel,
         "host": False,
         "objects": [
-            Object(Matching, "REL/empty.c"),  # Must be marked as matching
+            # Object(Matching, "REL/empty.c"),  # Must be marked as matching
         ],
     },
     {
@@ -339,25 +280,10 @@ config.libs = [
         "cflags": cflags_rel,
         "host": False,
         "objects": [
-            Object(NonMatching, "REL/board/board_process.cpp"),
-            Object(NonMatching, "REL/board/game_object.cpp"),
+            # Object(NonMatching, "REL/board/board_process.cpp"),
+            # Object(NonMatching, "REL/board/game_object.cpp"),
         ],
     },
-    Rel(
-        "w03dll",
-        objects={
-            Object(NonMatching, "REL/w03dll/world03_main.cpp"),
-            Object(NonMatching, "REL/w03dll/world03.cpp"),
-            Object(NonMatching, "REL/w03dll/world03_object.cpp"),
-            Object(NonMatching, "REL/w03dll/world03_event1.cpp"),
-            Object(NonMatching, "REL/w03dll/world03_event2.cpp"),
-            Object(NonMatching, "REL/w03dll/world03_eventman.cpp"),
-            Object(NonMatching, "REL/w03dll/world03_effect.cpp"),
-            Object(NonMatching, "REL/w03dll/world03_open.cpp"),
-            Object(NonMatching, "REL/w03dll/world03_light.cpp"),
-            Object(NonMatching, "REL/w03dll/world03_chusan.cpp"),
-        },
-    ),
 ]
 
 if args.mode == "configure":

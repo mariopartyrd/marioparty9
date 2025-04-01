@@ -1,3 +1,0 @@
-Sections:
-	.ctors      type:rodata align:32
-	.dtors      type:rodata align:32
